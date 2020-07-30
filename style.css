@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-image: url(./assets/img/08.png);
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 400px;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  border: 1px solid lightgray;
+  background-color: teal;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+}
+
+.video {
+  display: none;
+}
+
+.video-display {
+  display: block;
+  margin: -450px;
+}

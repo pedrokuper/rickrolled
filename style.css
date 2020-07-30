@@ -5,7 +5,11 @@
 }
 
 .wrapper {
-  background-image: url(./assets/img/08.png);
+  filter: blur(10%);
+  background-image: url(./assets/img/08_opt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   height: 100vh;
 }
 

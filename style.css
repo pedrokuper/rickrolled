@@ -32,5 +32,6 @@
 
 .video-display {
   display: block;
-  margin: -450px;
+  margin: -460px;
+  height: 110vh;
 }

@@ -5,15 +5,22 @@ button.addEventListener("click", playVideo);
 
 function playVideo() {
   //video.style.display = "block";
-  toggle();
+  toggleVideo();
   video.play();
+  toggleButton();
   console.log("video");
 
   // button.style.display = "none";
 }
 
-function toggle() {
-  if (video.classList != "video-display") {
-    video.classList.toggle("video-display");
+function toggleVideo() {
+  if (video.classList != "video-on") {
+    video.classList.toggle("video-on");
+  }
+}
+
+function toggleButton() {
+  if (button.classList != "button-off") {
+    button.classList.toggle("button-off");
   }
 }

@@ -6,29 +6,28 @@
 }
 
 .wrapper {
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  background: #e4e4f1;
+
+  //background-color: #fbab7e;
+  //background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 
   .center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-
     .button {
-      margin-top: 300px;
-      padding: 10px 30px;
-      font-size: 1.5rem;
-      border: 1px solid lightgray;
-      background-color: #08aeea;
-      background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
-      color: white;
-      box-shadow: 0.5px 0.5px 2px black;
+      padding: 10px 40px;
+      font-size: 2.5rem;
+      border-radius: 32px;
+      background: #e4e4f1;
+      box-shadow: -22px -22px 66px #d6d6e3, 22px 22px 66px #f2f2ff;
+      cursor: pointer;
+      overflow: hidden;
+      border: none;
+      display: grid;
     }
 
     .button-off {
@@ -40,21 +39,19 @@
     }
 
     .video-on {
-      display: block;
-
-      @media screen and (min-width: 320px) and (max-width: 480px) {
-        margin: 150px 0;
-        width: 490px;
+      display: flex;
+      overflow: hidden;
+      margin: auto;
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        width: 360px;
       }
 
-      @media screen and (min-width: 641px) and (max-width: 768px) {
-        margin: 150px 0;
-        max-width: 575px;
+      @media screen and (min-width: 642px) and (max-width: 1000px) {
+        max-width: 642px;
       }
 
-      @media (max-width: 968px) {
-        margin: 150px 0;
-        max-width: 1075px;
+      @media screen and (min-width: 1000px) and (max-width: 1600px) {
+        max-width: 780px;
       }
     }
   }

@@ -8,7 +8,6 @@ function playVideo() {
   toggleVideo();
   video.play();
   toggleButton();
-  console.log("video");
 
   // button.style.display = "none";
 }
